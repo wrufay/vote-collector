@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>NSISP Pumpkin Vote Counter 2024</title>
+    <!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/css/bootstrap.min.css">
+
+<!-- Bootstrap JS and dependencies (jQuery) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="./style.css">
+
+  </head>
+    
+  <body>
+  <div class="bigcon">
+  <div class="container">
+    <div class="con">
+      <h1>vote your fav!</h1>
+      <img id="pumpkinImg" class="image" src="https://assets.codepen.io/4671541/1.jpg?"></img>
+    </div>
+    <form action="https://sheetdb.io/api/v1/5h69e8e1zb2eh" method="POST" id="voteForm">
+      <div class="form-group">
+        <label for="name">Your Name:</label>
+        <input type="text" placeholder="Name" name="data[Name]" id="name" required>
+      </div>
+
+      <div class="form-group">
+        <label for="pumpkinId">Choose one:</label>
+        <select name="data[Pumpkin ID]" id="pumpkinId" required>
+          <option value="" disabled selected>Select a Pumpkin</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+          <option value="11">11</option>
+          <option value="12">12</option>
+          <option value="13">13</option>
+          <option value="14">14</option>
+          <!-- Add more options as needed -->
+        </select>
+      </div>
+
+      <button type="submit">Submit</button>
+      <p id="next">Tap to see next (1/14)</p>
+    </form>
+
+    <!--     <div id="loadingMessage" class="alert alert-info" style="display: none;">Submitting your vote...</div> -->
+
+  </div>
+  <div class="img">
+    <img src="https://media3.giphy.com/media/tpiOnTAP6sDSrwkGxZ/giphy.gif?cid=6c09b9528ib1fobtpoo9fpc5uqb2t182gonkrjd0zxbyv7p8&ep=v1_internal_gif_by_id&rid=giphy.gif&ct=s" />
+  </div>
+</div>
+
+<!--end first slide-->
+
+<!--end slider container-->
+
+<script src="
+https://cdn.jsdelivr.net/npm/sweetalert2@11.14.2/dist/sweetalert2.all.min.js
+"></script>
+    <script  src="./script.js"></script>
+
+  </body>
+  
+</html>

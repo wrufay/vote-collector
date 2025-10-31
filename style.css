@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@200..800&family=Lora:wght@400..700&display=swap");
+
+:root {
+  --golden: #e8d1a7;
+  --caramel: #84592b;
+  --wine: #743014;
+  --cocoa: #442d1c;
+  --olive: #9d9167;
+  --midnight: #2a2d32;
+  --white: #fefcf6;
+  --sky: #d6e0e2;
+  --storm: #686867;
+  --cream: #f4efe6;
+}
+
+body {
+  margin: 0;
+  padding: 30px;
+  background-color: var(--golden);
+  color: var(--cream);
+  font-family: "Karla", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+}
+.con {
+  margin-left: -0.4rem;
+}
+
+.image {
+  width: 80%;
+  min-width: 100px;
+  cursor: pointer;
+  filter: contrast(100%) brightness(150%) sepia(40%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.container {
+  margin-top: 2rem;
+  max-width: 500px;
+  padding: 30px;
+  background-color: var(--olive);
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+h1 {
+  font-size: 2.2rem;
+  font-family: "Lora", serif;
+  color: var(--golden);
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+form {
+  margin-left: 1.8em;
+}
+
+#name {
+  width: 8rem;
+  color: var(--caramel);
+  background-color: var(--cream);
+}
+#name:focus,
+#pumpkinId:focus {
+  outline: none;
+}
+#pumpkinId {
+  text-align: center;
+  width: 9rem;
+  color: var(--caramel);
+  height: 40px;
+  background-color: var(--golden);
+}
+
+.img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.img img {
+  width: 320px;
+  margin-top: -2.5rem;
+}
+#pumpkinId,
+#name {
+  cursor: pointer;
+  font-family: "karla", sans-serif;
+  margin-top: 0.5rem;
+  padding: 10px;
+  border-radius: 3rem;
+  border-width: 0px;
+  font-size: 14px;
+  transition: all 0.3s ease;
+}
+#pumpkinId:hover {
+  color: var(--cream);
+  background-color: var(--olive);
+}
+label {
+  color: #f7ebcd;
+}
+button {
+  margin-top: 0.2rem;
+  padding: 12px;
+  background-color: var(--caramel);
+  color: var(--cream);
+  font-family: "karla", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 9rem;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: var(--wine);
+  transitions: all 0.3s ease;
+  transform: scale(1.05);
+}
+
+p {
+  font-size: 14px;
+  cursor: pointer;
+}
+p,
+img,
+h1,
+h2,
+label {
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+@media (max-width: 500px) {
+  .image {
+    margin-top: -1rem;
+    margin-right: -0.5rem;
+  }
+  h1 {
+    margin-top: -0rem;
+  }
+}
+
+#pumpkinImg {
+  filter: brightness(300%) sepia(70%);
+}
